@@ -1,16 +1,5 @@
 'use strict';
 
-function showListInput() {
-    let listInput = $('<input type="text" placeholder="Title">');
-    listInput.addClass("list-input").attr('id', 'input-main').appendTo(mainContainer);
-    let btnAdd = $('<img src="img/plus.png">');
-    btnAdd.addClass("btn-add").attr('id', 'add').appendTo(mainContainer);
-    let btnHide = $('<img src="img/crossed.png">');
-    btnHide.addClass("btn-hide").attr('id', 'hide').appendTo(mainContainer);
-    let btnOpen = $('<img src="img/eye.png">');
-    btnOpen.addClass("btn-open").attr('id', 'open').appendTo(mainContainer);
-}
-
 function addListItem() {
     let value = $('#input-main').val();
     let listItem = $('<div></div>').addClass('list-item').appendTo($('#wrapper'));
