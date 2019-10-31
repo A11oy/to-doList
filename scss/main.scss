@@ -1,0 +1,85 @@
+#wrapper {
+    font-size: 20px;
+    width: 500px;
+    margin: 10px auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    padding: 5px;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 2px;
+    border: 1px solid #4F45A9;
+
+    &:focus {
+        border: 2px solid #4F45A9;
+        outline: none;
+    }
+}
+
+img {
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-size: 30px;
+    background-image: url("/img/plus.png");
+}
+
+.btn-hide {
+    background-size: 30px;
+    background-image: url("/img/eye.png");
+}
+
+.list-item {
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid #4F45A9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+.btn-list-container {
+    width: 15%;
+}
+
+.text-note {
+    width: 80%;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    color: red;
+}
+
+.displayed {
+    display: block;
+}
+
+.hidden .finished {
+    display: none;
+}
+
+.finished {
+    text-decoration: line-through;
+    color: grey;
+    border: 1px grey solid;
+}
